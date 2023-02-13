@@ -23,6 +23,7 @@ export default defineConfig({
 		createHtmlPlugin(),
 	],
 	base: './',
+
 	build: {
 		target: 'esnext',
 	},
