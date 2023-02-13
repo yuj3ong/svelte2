@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.8
- * File generated Mon Feb 13 2023 16:42:56 GMT+0900 (대한민국 표준시)
+ * File generated Mon Feb 13 2023 17:17:22 GMT+0900 (대한민국 표준시)
  */
 
 export const __version = "2.18.8"
-export const __timestamp = "2023-02-13T07:42:56.742Z"
+export const __timestamp = "2023-02-13T08:17:22.667Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -24,31 +24,6 @@ export const _tree = {
   "ownMeta": {},
   "absolutePath": "src/pages",
   "children": [
-    {
-      "isFile": true,
-      "isDir": false,
-      "file": "aaa.svelte",
-      "filepath": "/aaa.svelte",
-      "name": "aaa",
-      "ext": "svelte",
-      "badExt": false,
-      "absolutePath": "C:/Users/yjchoi/Downloads/storybook-main/storybook-main/src/pages/aaa.svelte",
-      "importPath": "../src/pages/aaa.svelte",
-      "isLayout": false,
-      "isReset": false,
-      "isIndex": false,
-      "isFallback": false,
-      "isPage": true,
-      "ownMeta": {},
-      "meta": {
-        "recursive": true,
-        "preload": false,
-        "prerender": true
-      },
-      "path": "/aaa",
-      "id": "_aaa",
-      "component": () => import('../src/pages/aaa.svelte').then(m => m.default)
-    },
     {
       "isFile": true,
       "isDir": false,
