@@ -1,5 +1,4 @@
 <script>
-	const a = 12;
 </script>
 
 <div>
