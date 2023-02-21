@@ -1,27 +1,109 @@
 <style>
 	.body {
-		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 		width: 100%;
-		/* height: 900px; */
-		background: #fef5ee;
 		text-align: center;
-		padding-top: 100px;
+		border: 1px solid black;
+		gap: 10px;
 	}
 
-	.center {
-		height: 100px;
-		padding: 10px;
-	}
-
+	/* 전단지 지참시 모든 품목 10% 할인 */
 	.top-bubble {
-		position: absolute;
-		left: 0;
-		top: 0;
+		order: 1;
 		width: 100%;
-		text-align: left;
+		border: 1px solid blue;
+		background-color: red;
 	}
 
+	.top-bubble .floating-text-top {
+		top: 10px;
+	}
+
+	.top-bubble .floating-text-top strong {
+		color: yellow;
+	}
+	/* 전단지 지참시 모든 품목 10% 할인 */
+
+	/* 2016.11.06(일) GRAND OPEN */
+	.center {
+		order: 2;
+	}
+	.center p {
+		display: flex;
+		flex-flow: column;
+		border: 1px solid black;
+	}
+
+	.center-text1 {
+		order: 2;
+		width: 100%;
+		text-align: center;
+		font-size: 45px;
+		color: red;
+		margin-top: -15px;
+	}
+
+	.center-text2 {
+		order: 1;
+		width: 100%;
+		text-align: center;
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	.center-text1 + .center-text2 {
+		margin-top: 20px;
+	}
+	/* 2016.11.06(일) GRAND OPEN */
+
+	/* 애견용품 할인매장 도그버디 */
+	.title-area {
+		order: 3;
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		top: 200px;
+		left: 0;
+		width: 100%;
+		border: 1px solid black;
+		gap: 10px;
+		padding-bottom: 10px;
+	}
+
+	.title-area h1 {
+		order: 2;
+	}
+	.title-area p {
+		order: 1;
+	}
+	/* 애견용품 할인매장 도그버디 */
+
+	/* 내 반려견의 편안한 안식처, ~ */
+	.center-bubble {
+		order: 4;
+		display: inline-flex;
+		align-items: baseline;
+		justify-content: center;
+		border: 1px solid hotpink;
+	}
+
+	.center-bubble strong {
+		font-weight: bold;
+	}
+
+	.center-bubble p strong {
+		color: red;
+	}
+	/* 내 반려견의 편안한 안식처, ~ */
+
+	/* 영업시간 */
 	.bottom-map {
+		order: 5;
+		margin-top: 100px;
+		background: blue;
+		padding: 20px;
 		text-align: left;
 		margin-left: 10px;
 	}
@@ -36,87 +118,26 @@
 		margin-left: 10px;
 	}
 
-	.top-bubble .floating-text-top {
-		position: absolute;
-		top: 10px;
-		background: red;
-		text-align: center;
-		width: 100%;
-	}
-
-	.top-bubble .floating-text-top strong {
-		color: yellow;
-	}
-	.center-text1 {
-		position: absolute;
-		left: 0;
-		top: 110px;
-		width: 100%;
-		text-align: center;
-		font-size: 45px;
-		color: red;
-	}
-
-	.center-text2 {
-		position: absolute;
-		left: 0;
-		top: 50px;
-		width: 100%;
-		text-align: center;
-		font-size: 24px;
-	}
-
-	.title-area {
-		position: absolute;
-		top: 200px;
-		left: 0;
-		width: 100%;
-	}
-
-	.title-area h1 {
-		padding-left: 100px;
-		display: inline-block;
-	}
-	.title-area p {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		margin-left: -60px;
-	}
-
-	.center-bubble {
-		padding-top: 50px;
-	}
-
-	.center-bubble strong {
-		font-weight: bold;
-	}
-
-	.center-bubble p strong {
-		color: red;
-	}
-
-	.bottom-map {
-		margin-top: 100px;
-		background: blue;
-		padding: 20px;
-	}
-
 	.bottom-map > dl {
-		background: red;
+		color: white;
+		border: 1px solid violet;
 	}
 	.bottom-map > dl > dt {
 		display: inline-block;
 		vertical-align: top;
+		color: yellow;
 	}
+
 	.bottom-map > dl > dd {
 		display: inline-block;
 	}
 	.bottom-map > dl > dd > dl {
 		display: block;
+		font-size: 15px;
 	}
+	/* 영업시간 */
 
+	/* 문의 */
 	address {
 		font-style: normal;
 	}
@@ -125,7 +146,9 @@
 	}
 	address dl dd {
 		color: white;
+		font-size: 20px;
 	}
+	/* 문의 */
 </style>
 
 <script>

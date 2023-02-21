@@ -1,64 +1,66 @@
 <style>
 	.body {
-		display: flex;
-		flex-direction: column;
 		width: 100%;
+		/* height: 900px; */
 		background: #b33504;
 		text-align: center;
 		overflow: auto;
-		gap: 10px;
 	}
 
 	.title-area {
-		display: flex;
-		flex-direction: column;
+		position: relative;
+		height: 300px;
+		margin-top: 30px;
 	}
 
 	.title-area h1 {
-		display: flex;
-		align-self: center;
-		order: 2;
-		width: 50px;
+		padding-top: 60px;
 		color: white;
-		margin-bottom: 100px;
 	}
 
 	.title-area p.floating-text {
-		order: 1;
 		color: black;
 		font-weight: bold;
 		font-size: 40px;
 	}
+	.title-area p {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
 	.center-typo {
-		display: flex;
+		position: relative;
+		height: 500px;
 		text-align: center;
-		justify-content: center;
 	}
 
 	.center-typo p {
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		font-weight: bold;
-		font-size: 50px;
+		font-size: 30px;
 		color: white;
-		margin-bottom: 40px;
 	}
 	.menu {
-		display: flex;
-		flex-direction: column;
 		font-weight: bold;
 		width: 280px;
 		margin: 0 auto;
 		font-size: 0;
-		gap: 10px;
 	}
 
 	.menu-pr p span {
 		font-size: 15px;
+		margin-top: 10px;
 		background-color: white;
 		color: #b33504;
 		width: 220px;
 		text-align: center;
 		display: block;
 		margin: 0 auto;
+		margin-top: 13px;
 	}
 
 	dl {
@@ -90,7 +92,7 @@
 
 	p.address_descr {
 		border-bottom: 1px solid black;
-		width: 45%;
+		width: 59%;
 		margin: 0 auto;
 		font-weight: bold;
 	}
