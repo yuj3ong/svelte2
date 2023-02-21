@@ -19,7 +19,7 @@
 
 	.center-text1 {
 		align-self: flex-end;
-		left: 0;
+		left: 1;
 		top: 110px;
 		width: 100%;
 		text-align: center;
