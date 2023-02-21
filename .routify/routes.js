@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.8
- * File generated Mon Feb 13 2023 17:17:22 GMT+0900 (대한민국 표준시)
+ * File generated Tue Feb 21 2023 10:31:52 GMT+0900 (대한민국 표준시)
  */
 
 export const __version = "2.18.8"
-export const __timestamp = "2023-02-13T08:17:22.667Z"
+export const __timestamp = "2023-02-21T01:31:52.190Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -24,6 +24,155 @@ export const _tree = {
   "ownMeta": {},
   "absolutePath": "src/pages",
   "children": [
+    {
+      "isFile": false,
+      "isDir": true,
+      "file": "html",
+      "filepath": "/html",
+      "name": "html",
+      "ext": "",
+      "badExt": false,
+      "absolutePath": "C:/Users/yjchoi/Downloads/storybook-main/storybook-main/src/pages/html",
+      "children": [
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "html1.svelte",
+          "filepath": "/html/html1.svelte",
+          "name": "html1",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "C:/Users/yjchoi/Downloads/storybook-main/storybook-main/src/pages/html/html1.svelte",
+          "importPath": "../src/pages/html/html1.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/html/html1",
+          "id": "_html_html1",
+          "component": () => import('../src/pages/html/html1.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "html1_flex.svelte",
+          "filepath": "/html/html1_flex.svelte",
+          "name": "html1_flex",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "C:/Users/yjchoi/Downloads/storybook-main/storybook-main/src/pages/html/html1_flex.svelte",
+          "importPath": "../src/pages/html/html1_flex.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/html/html1_flex",
+          "id": "_html_html1_flex",
+          "component": () => import('../src/pages/html/html1_flex.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "html2.svelte",
+          "filepath": "/html/html2.svelte",
+          "name": "html2",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "C:/Users/yjchoi/Downloads/storybook-main/storybook-main/src/pages/html/html2.svelte",
+          "importPath": "../src/pages/html/html2.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/html/html2",
+          "id": "_html_html2",
+          "component": () => import('../src/pages/html/html2.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "html3.svelte",
+          "filepath": "/html/html3.svelte",
+          "name": "html3",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "C:/Users/yjchoi/Downloads/storybook-main/storybook-main/src/pages/html/html3.svelte",
+          "importPath": "../src/pages/html/html3.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/html/html3",
+          "id": "_html_html3",
+          "component": () => import('../src/pages/html/html3.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "html4.svelte",
+          "filepath": "/html/html4.svelte",
+          "name": "html4",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "C:/Users/yjchoi/Downloads/storybook-main/storybook-main/src/pages/html/html4.svelte",
+          "importPath": "../src/pages/html/html4.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/html/html4",
+          "id": "_html_html4",
+          "component": () => import('../src/pages/html/html4.svelte').then(m => m.default)
+        }
+      ],
+      "isLayout": false,
+      "isReset": false,
+      "isIndex": false,
+      "isFallback": false,
+      "isPage": false,
+      "ownMeta": {},
+      "meta": {
+        "recursive": true,
+        "preload": false,
+        "prerender": true
+      },
+      "path": "/html"
+    },
     {
       "isFile": true,
       "isDir": false,
