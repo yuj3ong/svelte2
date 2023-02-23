@@ -1,52 +1,46 @@
 <style>
 	.body {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
 		width: 100%;
+		height: 900px;
 		background: #f04823;
 		text-align: center;
 	}
 
-	.bottom-company {
-		display: flex;
-		justify-content: center;
-		order: 3;
-		border: 1px solid yellow;
-	}
 	.center-typo {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		-webkit-text-stroke: 1px #b12120;
 		font-weight: bold;
-		border: 1px solid yellow;
+		position: relative;
 	}
 
 	.center-typo p.bend-text {
-		display: flex;
+		text-align: left;
+		white-space: pre-wrap;
 		color: white;
+		position: absolute;
+		top: 0;
+		left: 0;
 		white-space: nowrap;
 		text-align: center;
 		width: 100%;
 	}
 
 	.center-typo strong.border-text {
-		display: flex;
+		display: block;
 		color: white;
 		font-size: 150px;
+		padding-top: 2px;
 		text-shadow: rgb(0, 0, 0) 1px 0 10px;
 		box-sizing: border-box;
-		border: 1px solid black;
-		margin-bottom: -38px;
+		border: 4px solid black;
+		padding-top: 100px;
+		margin-bottom: 100px;
 	}
 
 	p.box-text {
-		display: flex;
-		justify-content: center;
+		display: inline;
 		color: #b12120;
 		background: white;
-		width: 96px;
+		width: 17%;
 	}
 
 	.center-typo span {
@@ -60,20 +54,21 @@
 	}
 
 	.body h1 {
+		position: absolute;
 		width: 100%;
+		bottom: 31.5%;
 	}
 
-	.under-descr {
-		order: 2;
-	}
 	.under-descr p {
+		display: block;
 		margin: 0 auto;
+		padding-top: 10px;
 		width: 220px;
 		text-align: center;
 	}
 
 	address {
-		order: 4;
+		position: absolute;
 		top: 900px;
 		right: 0;
 		left: 0;

@@ -2,25 +2,27 @@
 	.body {
 		display: flex;
 		flex-direction: column;
-		width: 100%;
+		justify-content: center;
 		background: #b33504;
-		text-align: center;
 		overflow: auto;
 		gap: 10px;
+		padding-bottom: 10px;
 	}
 
 	.title-area {
 		display: flex;
+		text-align: center;
+		align-items: center;
 		flex-direction: column;
+		border: 1px solid pink;
+		margin-bottom: 150px;
 	}
 
 	.title-area h1 {
 		display: flex;
-		align-self: center;
 		order: 2;
 		width: 50px;
 		color: white;
-		margin-bottom: 100px;
 	}
 
 	.title-area p.floating-text {
@@ -31,71 +33,66 @@
 	}
 	.center-typo {
 		display: flex;
-		text-align: center;
 		justify-content: center;
+		margin-bottom: 40px;
+		border: 1px solid greenyellow;
 	}
 
 	.center-typo p {
+		text-align: center;
 		font-weight: bold;
 		font-size: 50px;
 		color: white;
-		margin-bottom: 40px;
 	}
 	.menu {
 		display: flex;
 		flex-direction: column;
-		font-weight: bold;
-		width: 280px;
+		width: 220px;
 		margin: 0 auto;
-		font-size: 0;
-		gap: 10px;
+		font-weight: bold;
+		column-gap: 10px;
+		border: 1px solid tan;
+		margin-bottom: 20px;
 	}
 
 	.menu-pr p span {
+		display: flex;
+		justify-content: center;
 		font-size: 15px;
 		background-color: white;
 		color: #b33504;
-		width: 220px;
-		text-align: center;
-		display: block;
-		margin: 0 auto;
+		font-weight: bold;
 	}
 
+	.menu-inner {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 10px;
+	}
 	dl {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		width: 40%;
-		height: 22px;
+		display: flex;
 		color: white;
-		text-align: left;
 	}
 	dl * {
 		font-size: 18px;
 	}
 
-	dt,
-	dd {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-	}
-
 	address {
-		padding-bottom: 10px;
-		margin-top: 20px;
-		margin-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		font-style: normal;
+		border: 1px solid turquoise;
 	}
 
 	p.address_descr {
+		display: flex;
 		border-bottom: 1px solid black;
-		width: 45%;
-		margin: 0 auto;
 		font-weight: bold;
 	}
 
 	p.address2 {
+		display: flex;
 		font-size: 14px;
 	}
 </style>

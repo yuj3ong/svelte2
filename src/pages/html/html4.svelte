@@ -1,257 +1,264 @@
 <style>
-	li {
-		display: inline;
-	}
+	.body {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		/* padding-left: 15%; */
+		gap: 20px;
 
+		/* align-items: center; */
+	}
 	/* 최상단 메뉴바 스타일 start */
-	.title-area {
-		display: inline-block;
-		width: 100%;
+
+	.titleTxt {
+		display: flex;
+		align-items: center;
+		padding-left: 5%;
 		border: 3px solid black;
-		margin-bottom: 10px;
 	}
 
 	.title-area h1 {
-		display: inline-block;
+		display: flex;
 		border: 1px solid black;
-		margin-left: 15%;
-		vertical-align: middle;
+		margin-right: 1%;
 	}
 
 	#siteMap {
-		display: inline-block;
+		display: flex;
 		border: 1px solid black;
-		margin-left: 1%;
 		font-size: 10px;
-		vertical-align: middle;
+		margin-right: 15%;
 	}
 
 	#siteMenu {
-		display: inline-block;
+		display: flex;
 		border: 1px solid black;
-		margin-left: 15%;
 		font-size: 10px;
 		font-weight: bold;
-		vertical-align: middle;
 	}
 
 	#siteMap li {
-		margin-left: 3px;
 		margin-right: 3px;
 	}
 
-	#siteMenu li {
-		margin-left: 15px;
+	#siteMenu li + li {
+		margin-left: 10px;
 	}
 	/* 최상단 메뉴바 스타일 end */
 
 	/* 바디 스타일 start */
 	.body-area {
-		display: block;
-		width: 100%;
+		display: flex;
+		flex-direction: column;
 		border: 3px solid black;
-		margin-bottom: 10px;
 	}
 	/* 센터 스타일 start */
 	.center {
+		display: flex;
 		border: 1px solid black;
-		text-align: left;
-		width: 100%;
 		background-image: url('../../../public/tab.jpg');
-		background-size: 50%;
+		background-size: 100%;
 		background-repeat: no-repeat;
 		background-position: right;
 	}
 
-	#centerText1 {
-		display: inline-block;
+	.centerTxt {
+		margin: 15px 0 80px 5%;
 		width: 300px;
+	}
+
+	#centerText1 {
+		display: flex;
+		flex-direction: column;
 		border: 1px solid red;
-		margin-left: 15%;
-		padding-right: 10px;
 		font-size: 20px;
 		font-style: italic;
 	}
 
 	#centerText2 {
-		display: inline-block;
+		display: flex;
 		border: 1px solid green;
-		margin-top: 15px;
 		font-size: 5px;
 	}
 	/* 센터 스타일 end */
 
 	/* 바텀 스타일 start */
 	.bottom {
-		display: inline-block;
-		width: 550px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
 		border: 1px solid black;
-		margin-left: 15%;
+		background-color: rgb(205, 205, 205);
 	}
 
-	p.busiTitle {
-		display: block;
-		/* border: 1px solid black; */
-		border-bottom: 1px solid black;
-		font-size: 10px;
-		padding-bottom: 5px;
+	.business {
+		display: flex;
+		gap: 20%;
+		padding-left: 5%;
 	}
 
 	.business p {
-		display: block;
+		display: flex;
+		flex-direction: column;
 		border: 1px solid pink;
 		width: 150px;
 		font-size: 5px;
 	}
 
+	p.busiTitle {
+		display: flex;
+		border: 1px solid black;
+		border-bottom: 1px solid black;
+		font-size: 10px;
+		padding-bottom: 5px;
+	}
+
 	.business span {
-		display: inline;
+		display: flex;
+		justify-content: center;
 		border: 1px solid #ae9874;
 		width: 100px;
-		text-align: center;
 		background: #ae9874;
 		font-size: 5px;
 		color: white;
 	}
 
 	#businessList {
-		display: inline;
+		display: flex;
+		align-items: flex-end;
+		text-align: center;
 		border: 1px solid blue;
-		float: right;
-		padding-top: 10px;
 		font-size: 5px;
+		gap: 30%;
 	}
 
 	#businessList li {
-		margin-left: 50px;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-grow: 1;
 	}
 	/* 바텀 스타일 end */
 
 	/* 노티스 스타일 start */
 	.notice {
-		display: inline-block;
-		margin-left: 15%;
+		display: flex;
 		border: 1px solid tomato;
-		width: 800px;
 	}
 
+	.notice-area {
+		display: flex;
+		justify-content: flex-start;
+		padding-left: 5%;
+	}
 	.noticeBoard {
-		display: inline-block;
-		border: 1px solide black;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: space-between;
+		background: rgb(201, 201, 201);
 		width: 150px;
-		padding-left: 10px;
+		padding: 0 10px 0 10px;
 	}
 
 	p.notice {
-		display: inline-block;
+		display: flex;
 		border: 1px solid green;
-		width: 150px;
 		border-bottom: 1px solid black;
 		font-size: 10px;
-		margin-bottom: 10px;
-		margin: 0;
 	}
 
 	p.artiTitle {
-		display: block;
+		display: flex;
 		border: 1px solid pink;
-		width: 150px;
-		font-size: 12px;
+		font-size: 10px;
 		font-weight: bold;
 	}
 
 	#article {
-		display: block;
+		display: flex;
 		border-top: 1px solid gray;
 		font-size: 5px;
 	}
 
 	#notiDate {
-		display: inline;
-		width: 100px;
-		text-align: center;
+		display: flex;
 		border-top: 1px solid gray;
 		font-size: 5px;
 		color: gray;
 	}
 
 	.noticeIMG {
-		display: inline-block;
+		display: flex;
+		flex-direction: row;
 		border: 1px solid black;
-		width: 633px;
 		height: 130px;
-		margin-left: 10px;
-		/* 	1. <p>들의 너비를 각각 지정하지 않고, 균등분할하는 방법이 있나요?
-			2.  높이도 균등분할할 수 있나여?*/
 	}
 
 	p.philosophy {
-		display: inline-block;
-		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: space-between;
 		font-size: 5px;
 		border: 1px solid blue;
 		padding-bottom: 10px;
 		width: 200px;
-		height: 120px;
+		/* height: 120px; */
 	}
 
 	p.philosophy span {
-		display: inline-block;
-		position: absolute;
-		bottom: 10%;
-		left: 0;
+		display: flex;
 	}
 
 	p.history {
-		display: inline-block;
+		display: flex;
 		border: 1px solid blue;
 		font-size: 5px;
 		width: 200px;
-		height: 120px;
 	}
 
 	p.prmovie {
-		display: inline-block;
-		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: space-between;
 		font-size: 5px;
 		border: 1px solid blue;
 		width: 200px;
-		height: 120px;
 	}
 
 	p.prmovie span {
-		display: inline-block;
-		position: absolute;
-		bottom: 10%;
-		left: 0;
+		display: flex;
 	}
 
-	.noticeBoard,
-	.noticeIMG {
-		display: inline-block;
-		vertical-align: top;
-	}
 	/* 노티스 스타일 end */
 	/* 바디 스타일 end */
 
 	/* 어드레스 start */
 	address {
+		display: flex;
+		flex-direction: column;
 		padding-top: 15px;
 		padding-bottom: 20px;
 		background-color: darkgray;
 		font-size: 5px;
 		font-style: normal;
-		padding-left: 16%;
 	}
 
+	.addContent {
+		padding-left: 5%;
+	}
+	.addPhone {
+		display: flex;
+	}
 	address p {
-		display: inline-block;
+		display: flex;
+		margin-right: 20px;
 	}
 
 	#phoneNumber {
-		display: inline-block;
+		display: flex;
 		border: 1px solid hotpink;
-		margin-left: 20px;
 	}
 
 	dt,
@@ -260,7 +267,23 @@
 	}
 
 	address span {
-		display: block;
+		display: flex;
+	}
+
+	.test-container {
+		width: 100%;
+		background: goldenrod;
+		padding: 20px;
+		position: relative;
+	}
+	.test-container .container-inner {
+		width: 100;
+		height: 2px;
+		background: red;
+		margin: 0 auto;
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 </style>
 
@@ -275,47 +298,53 @@
 
 	<head>TES</head>
 
-	<body>
+	<div class="body">
 		<div class="title-area">
-			<h1><strong>TES</strong></h1>
+			<div class="titleTxt">
+				<h1><strong>TES</strong></h1>
 
-			<ul id="siteMap">
-				<li>ENGLISH</li>
-				<li>CONTACT US</li>
-				<li>SITEMAP</li>
-			</ul>
+				<ul id="siteMap">
+					<li>ENGLISH</li>
+					<li>CONTACT US</li>
+					<li>SITEMAP</li>
+				</ul>
 
-			<ul id="siteMenu">
-				<li>About us</li>
-				<li>Business</li>
-				<li>Sustainable Management</li>
-				<li>Investor Relations</li>
-				<li>Recruitment</li>
-				<li>Notice</li>
-			</ul>
+				<ul id="siteMenu">
+					<li>About us</li>
+					<li>Business</li>
+					<li>Sustainable Management</li>
+					<li>Investor Relations</li>
+					<li>Recruitment</li>
+					<li>Notice</li>
+				</ul>
+			</div>
 		</div>
 
 		<div class="body-area">
 			<div class="center">
-				<p id="centerText1">
-					Building a more comfortable and humane world through <strong>TES</strong>
-					technology
-					<span id="centerText2">
-						We are emerging as a world-class company by securing technological
-						competitiveness and paraticing sound business principles for providing
-						exemplary customer satisfaction.</span
-					></p
-				>
+				<div class="centerTxt">
+					<p id="centerText1">
+						Building a more comfortable and humane world through <strong>TES</strong>
+						technology
+						<span id="centerText2">
+							We are emerging as a world-class company by securing technological
+							competitiveness and paraticing sound business principles for providing
+							exemplary customer satisfaction.</span
+						></p
+					>
+				</div>
 			</div>
 
 			<div class="bottom">
 				<div class="business">
-					<p class="busiTitle">OUR BUSINESS</p>
-					<p
-						>TES creating a new history now by looking ten years ahead and embracing the
-						entire century</p
-					>
-					<span>DISCOVER MORE</span>
+					<div class="busiTitleWrap">
+						<p class="busiTitle">OUR BUSINESS</p>
+						<p
+							>TES creating a new history now by looking ten years ahead and embracing
+							the entire century</p
+						>
+						<span>DISCOVER MORE</span>
+					</div>
 
 					<ul id="businessList">
 						<li>SEMICONDUCTOR</li>
@@ -326,38 +355,51 @@
 			</div>
 
 			<div class="notice">
-				<div class="noticeBoard">
-					<p class="notice">NOTICE</p>
-					<p class="artiTitle">AEO경영을 위한 수출입 ...</p>
-					<span id="article"
-						>(주)테스는 AEO경영을 위한 수출입 법규준수 및 안전관리 경영방침을 정하고
-						"종합인증우수업체(AEO)"의...</span
-					>
-					<span id="notiDate">2021-10-18</span>
-				</div>
+				<div class="notice-area">
+					<div class="noticeBoard">
+						<p class="notice">NOTICE</p>
+						<p class="artiTitle">AEO경영을 위한 수출입 ...</p>
+						<span id="article"
+							>(주)테스는 AEO경영을 위한 수출입 법규준수 및 안전관리 경영방침을 정하고
+							"종합인증우수업체(AEO)"의...</span
+						>
+						<span id="notiDate">2021-10-18</span>
+					</div>
 
-				<div class="noticeIMG">
-					<p class="philosophy"
-						>PHILOSOPHY
-						<span>Challenge, Create & Change</span>
-					</p>
-					<p class="history">HISTORY</p>
-					<p class="prmovie"
-						>PR MOVIE
-						<span>English | Chinese</span>
-					</p>
+					<div class="noticeIMG">
+						<p class="philosophy"
+							>PHILOSOPHY
+							<span>Challenge, Create & Change</span>
+						</p>
+						<p class="history">HISTORY</p>
+						<p class="prmovie"
+							>PR MOVIE
+							<span>English | Chinese</span>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 		<address>
-			<p>2374-36 JUNGBUDAERO, YANGJI-MYUN, CHEOIN-GU, YONGIN-SI, GYEONGGI-DO, 17162 KOREA</p>
-			<dl id="phoneNumber">
-				<dt>TEL :</dt>
-				<dd>+82.31.323.2552</dd>
-				<dt>FAX :</dt>
-				<dd>+82.31.323.2555</dd>
-			</dl>
-			<span>COPYRIGHT 2016 TES CO., LTD. ALL RIGHTS RESERVED. DESIGNED BY</span>
+			<div class="addContent">
+				<div class="addPhone">
+					<p
+						>2374-36 JUNGBUDAERO, YANGJI-MYUN, CHEOIN-GU, YONGIN-SI, GYEONGGI-DO, 17162
+						KOREA</p
+					>
+					<dl id="phoneNumber">
+						<dt>TEL :</dt>
+						<dd>+82.31.323.2552</dd>
+						<dt>FAX :</dt>
+						<dd>+82.31.323.2555</dd>
+					</dl>
+				</div>
+
+				<span>COPYRIGHT 2016 TES CO., LTD. ALL RIGHTS RESERVED. DESIGNED BY FISH</span>
+			</div>
 		</address>
-	</body>
+		<div class="test-container">
+			<div class="container-inner"></div>
+		</div>
+	</div>
 </div>

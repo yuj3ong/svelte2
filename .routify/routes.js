@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.8
- * File generated Tue Feb 21 2023 15:25:39 GMT+0900 (대한민국 표준시)
+ * File generated Thu Feb 23 2023 11:12:07 GMT+0900 (대한민국 표준시)
  */
 
 export const __version = "2.18.8"
-export const __timestamp = "2023-02-21T06:25:39.170Z"
+export const __timestamp = "2023-02-23T02:12:07.208Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -162,6 +162,31 @@ export const _tree = {
         {
           "isFile": true,
           "isDir": false,
+          "file": "html3_raw.svelte",
+          "filepath": "/html/html3_raw.svelte",
+          "name": "html3_raw",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "C:/Users/yjchoi/Downloads/storybook-main/storybook-main/src/pages/html/html3_raw.svelte",
+          "importPath": "../src/pages/html/html3_raw.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/html/html3_raw",
+          "id": "_html_html3_raw",
+          "component": () => import('../src/pages/html/html3_raw.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
           "file": "html4.svelte",
           "filepath": "/html/html4.svelte",
           "name": "html4",
@@ -183,6 +208,31 @@ export const _tree = {
           "path": "/html/html4",
           "id": "_html_html4",
           "component": () => import('../src/pages/html/html4.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "html4_raw.svelte",
+          "filepath": "/html/html4_raw.svelte",
+          "name": "html4_raw",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "C:/Users/yjchoi/Downloads/storybook-main/storybook-main/src/pages/html/html4_raw.svelte",
+          "importPath": "../src/pages/html/html4_raw.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/html/html4_raw",
+          "id": "_html_html4_raw",
+          "component": () => import('../src/pages/html/html4_raw.svelte').then(m => m.default)
         }
       ],
       "isLayout": false,
