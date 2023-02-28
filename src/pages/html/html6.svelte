@@ -92,8 +92,7 @@
 			padding: 0 16px;
 		}
 
-		.line_1,
-		.line_2 {
+		.line_1 {
 			display: flex;
 			flex-wrap: wrap;
 			width: 100%;
