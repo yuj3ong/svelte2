@@ -8,7 +8,7 @@
 			display: flex;
 			flex-direction: column;
 			gap: 10px;
-			min-width: 240px;
+			min-width: 200px;
 			height: 100vh;
 			overflow-y: scroll;
 		}
@@ -36,6 +36,7 @@
 		.searchTab {
 			display: flex;
 			justify-content: space-between;
+			justify-items: center;
 			align-items: center;
 		}
 
@@ -48,6 +49,7 @@
 
 		#search-form input[type='search'] {
 			display: flex;
+			min-width: 0;
 			flex: 1;
 		}
 		#search-form input[type='submit'] {
@@ -58,7 +60,8 @@
 		.profile {
 			display: flex;
 			border: 1px solid black;
-			/* margin-left: auto; */
+			min-width: 142px;
+			/* min-width 화면이 줄어도 영역이 줄어들지 않기 위해서 */
 		}
 
 		.profile ul li {
@@ -79,20 +82,22 @@
 		.mediaTab {
 			display: flex;
 			width: 100%;
+			justify-content: center;
 		}
 
 		.mediaList {
 			display: flex;
 			flex-direction: column;
 			width: 100%;
+			padding: 0 16px;
 		}
 
 		.line_1,
 		.line_2 {
 			display: flex;
-			justify-content: space-between;
 			flex-wrap: wrap;
 			width: 100%;
+			gap: 10px;
 		}
 
 		.mediaList ul ~ ul li {
@@ -106,7 +111,7 @@
 		.media-4 {
 			display: flex;
 			flex-direction: column;
-			flex-basis: 200px;
+			flex-basis: calc(25% - 30px * 3 / 4);
 		}
 
 		span[id*='back'] {
@@ -116,6 +121,44 @@
 
 		span[id*='descr'] {
 			height: 50px;
+		}
+	}
+
+	@media (max-width: 800px) {
+		#search-form {
+			justify-content: flex-end;
+		}
+		#search-form input[type='search'] {
+			display: none;
+			flex: 1;
+		}
+
+		.media-1,
+		.media-2,
+		.media-3,
+		.media-4 {
+			display: flex;
+			flex-direction: column;
+			flex-basis: calc(50% - 10px * 2 / 2);
+		}
+	}
+
+	@media (max-width: 600px) {
+		#search-form {
+			justify-content: flex-end;
+		}
+		#search-form input[type='search'] {
+			display: none;
+			flex: 1;
+		}
+
+		.media-1,
+		.media-2,
+		.media-3,
+		.media-4 {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 100%;
 		}
 	}
 </style>
@@ -196,7 +239,6 @@
 						<input type="search" />
 						<input type="submit" value="검색" />
 					</form>
-
 					<div class="profile">
 						<ul>
 							<li>만들기</li>
@@ -228,43 +270,39 @@
 
 			<div class="mediaTab">
 				<div class="mediaList">
-					<ul>
-						<ul class="line_1">
-							<li class="media-1">
-								<span id="back">background-img</span>
-								<span id="descr">자바스크립트 단기완성</span></li
-							>
-							<li class="media-2">
-								<span id="back">background-img</span>
-								<span id="descr">WEB1 - 21. 수업을 마치며 2/3</span></li
-							>
-							<li class="media-3">
-								<span id="back">background-img</span>
-								<span id="descr">기분이 풀리는 노래♬</span></li
-							>
-							<li class="media-4">
-								<span id="back">backgounrd-img</span>
-								<span id="descr">이전까지는 제발 긴장을 늦추지 마세요</span></li
-							>
-						</ul>
-						<ul class="line_2">
-							<li class="media-1">
-								<span id="back">background-img</span>
-								<span id="descr">자바스크립트 단기완성</span></li
-							>
-							<li class="media-2">
-								<span id="back">background-img</span>
-								<span id="descr">WEB1 - 21. 수업을 마치며 2/3</span></li
-							>
-							<li class="media-3">
-								<span id="back">background-img</span>
-								<span id="descr">기분이 풀리는 노래♬</span></li
-							>
-							<li class="media-4">
-								<span id="back">backgounrd-img</span>
-								<span id="descr">이전까지는 제발 긴장을 늦추지 마세요</span></li
-							>
-						</ul>
+					<ul class="line_1">
+						<li class="media-1">
+							<span id="back">background-img</span>
+							<span id="descr">자바스크립트 단기완성</span></li
+						>
+						<li class="media-2">
+							<span id="back">background-img</span>
+							<span id="descr">WEB1 - 21. 수업을 마치며 2/3</span></li
+						>
+						<li class="media-3">
+							<span id="back">background-img</span>
+							<span id="descr">기분이 풀리는 노래♬</span></li
+						>
+						<li class="media-4">
+							<span id="back">backgounrd-img</span>
+							<span id="descr">이전까지는 제발 긴장을 늦추지 마세요</span></li
+						>
+						<li class="media-1">
+							<span id="back">background-img</span>
+							<span id="descr">자바스크립트 단기완성</span></li
+						>
+						<li class="media-2">
+							<span id="back">background-img</span>
+							<span id="descr">WEB1 - 21. 수업을 마치며 2/3</span></li
+						>
+						<li class="media-3">
+							<span id="back">background-img</span>
+							<span id="descr">기분이 풀리는 노래♬</span></li
+						>
+						<li class="media-4">
+							<span id="back">backgounrd-img</span>
+							<span id="descr">이전까지는 제발 긴장을 늦추지 마세요</span></li
+						>
 					</ul>
 				</div>
 			</div>

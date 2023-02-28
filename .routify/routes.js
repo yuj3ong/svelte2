@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.8
- * File generated Mon Feb 27 2023 17:19:56 GMT+0900 (대한민국 표준시)
+ * File generated Tue Feb 28 2023 17:32:22 GMT+0900 (대한민국 표준시)
  */
 
 export const __version = "2.18.8"
-export const __timestamp = "2023-02-27T08:19:56.015Z"
+export const __timestamp = "2023-02-28T08:32:22.130Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -283,6 +283,56 @@ export const _tree = {
           "path": "/html/html6",
           "id": "_html_html6",
           "component": () => import('../src/pages/html/html6.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "html6 copy 2.svelte",
+          "filepath": "/html/html6 copy 2.svelte",
+          "name": "html6 copy 2",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "C:/Users/yjchoi/Downloads/storybook-main/storybook-main/src/pages/html/html6 copy 2.svelte",
+          "importPath": "../src/pages/html/html6 copy 2.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/html/html6 copy 2",
+          "id": "_html_html6_copy_2",
+          "component": () => import('../src/pages/html/html6 copy 2.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "html7.svelte",
+          "filepath": "/html/html7.svelte",
+          "name": "html7",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "C:/Users/yjchoi/Downloads/storybook-main/storybook-main/src/pages/html/html7.svelte",
+          "importPath": "../src/pages/html/html7.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/html/html7",
+          "id": "_html_html7",
+          "component": () => import('../src/pages/html/html7.svelte').then(m => m.default)
         }
       ],
       "isLayout": false,
