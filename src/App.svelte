@@ -13,8 +13,8 @@
 		gap: 20px;
 		justify-content: center;
 	}
-	ul li {
-	}
+	/* ul li {
+	} */
 	ul li div.on {
 		color: yellow;
 	}
@@ -27,6 +27,8 @@
 	import Markup2 from './pages/html/html2.svelte';
 	import Markup3 from './pages/html/html3.svelte';
 	import Markup4 from './pages/html/html4.svelte';
+	import Markup5 from './pages/html/html5.svelte';
+	import Markup6 from './pages/html/html6.svelte';
 
 	// import Nav from './components/nav/Nav.svelte';
 
@@ -60,6 +62,17 @@
 			<div class="{`${currentPage === 'markup/markup4' ? 'on' : ''}`}"> markup/markup4</div>
 		</button></li
 	>
+	<li
+		><button on:click="{clickHandler}">
+			<div class="{`${currentPage === 'markup/markup5' ? 'on' : ''}`}"> markup/markup5</div>
+		</button></li
+	>
+
+	<li
+		><button on:click="{clickHandler}">
+			<div class="{`${currentPage === 'markup/markup6' ? 'on' : ''}`}"> markup/markup6</div>
+		</button></li
+	>
 </ul>
 
 <main>
@@ -77,5 +90,11 @@
 	{/if}
 	{#if currentPage === 'markup/markup4'}
 		<div class="wrapper"><Markup4 /></div>
+	{/if}
+	{#if currentPage === 'markup/markup5'}
+		<div class="wrapper"><Markup5 /></div>
+	{/if}
+	{#if currentPage === 'markup/markup6'}
+		<div class="wrapper"><Markup6 /></div>
 	{/if}
 </main>
