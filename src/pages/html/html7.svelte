@@ -31,7 +31,7 @@
 		border: 1px solid black;
 		width: 36px;
 		height: 36px;
-		border: 0.5px solid white;
+		/* border: 0.5px solid white; */
 	}
 
 	.btnBundle .icon8-2 {
@@ -147,6 +147,8 @@
 		display: flex;
 		gap: 10px;
 		color: white;
+		font-size: 11px;
+		font-weight: bold;
 	}
 
 	.topRealtime {
@@ -215,7 +217,6 @@
 	}
 
 	.treeCon {
-		/* background: url(../../../public/top1.png) no-repeat 100%; */
 		border: 1px solid black;
 		width: 25px;
 		height: 25px;
@@ -258,11 +259,14 @@
 		display: flex;
 		overflow-y: scroll;
 		height: calc(100vh - 166px);
+		background-color: #4d4d4d;
+		color: #fffefa;
+		padding-left: 10px;
 	}
 
 	.chartTab {
 		display: flex;
-		background-color: aquamarine;
+		background-color: #323232;
 		width: 100%;
 		border: 2px solid gray;
 		min-height: calc(100vh - 120px);
