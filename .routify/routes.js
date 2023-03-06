@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.8
- * File generated Thu Mar 02 2023 21:37:45 GMT+0900 (대한민국 표준시)
+ * File generated Mon Mar 06 2023 14:38:05 GMT+0900 (대한민국 표준시)
  */
 
 export const __version = "2.18.8"
-export const __timestamp = "2023-03-02T12:37:45.180Z"
+export const __timestamp = "2023-03-06T05:38:05.314Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -333,6 +333,31 @@ export const _tree = {
           "path": "/html/html7",
           "id": "_html_html7",
           "component": () => import('../src/pages/html/html7.svelte').then(m => m.default)
+        },
+        {
+          "isFile": true,
+          "isDir": false,
+          "file": "html8.svelte",
+          "filepath": "/html/html8.svelte",
+          "name": "html8",
+          "ext": "svelte",
+          "badExt": false,
+          "absolutePath": "C:/Users/yjchoi/Downloads/storybook-main/storybook-main/src/pages/html/html8.svelte",
+          "importPath": "../src/pages/html/html8.svelte",
+          "isLayout": false,
+          "isReset": false,
+          "isIndex": false,
+          "isFallback": false,
+          "isPage": true,
+          "ownMeta": {},
+          "meta": {
+            "recursive": true,
+            "preload": false,
+            "prerender": true
+          },
+          "path": "/html/html8",
+          "id": "_html_html8",
+          "component": () => import('../src/pages/html/html8.svelte').then(m => m.default)
         }
       ],
       "isLayout": false,

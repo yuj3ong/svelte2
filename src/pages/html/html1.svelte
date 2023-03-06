@@ -158,8 +158,6 @@
 <div>
 	<Header />
 
-	<div> html1 </div>
-
 	<head>
 		<title>도그버디</title>
 	</head>
